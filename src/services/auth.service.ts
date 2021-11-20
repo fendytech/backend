@@ -8,8 +8,8 @@ export class AuthService {
     constructor(
         private readonly tokenService: TokenService,
     ){}
-  getHello(): string {
-    return 'Auth';
+  getHello(): any {
+    return this.tokenService.validateToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMTYzNzQwMjU2ODQ3MCIsInVzZXJuYW1lIjoidmFnZXNod2FyIiwiaWF0IjoxNjM3NDAyNTY4fQ.Lws5-fL_vQLxN6k3VGy76zMb7wN1dx_Dg5nuItJYvwg");
   }
 
   async login(
