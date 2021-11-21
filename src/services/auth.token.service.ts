@@ -1,5 +1,5 @@
 import { sign,verify } from "jsonwebtoken";
-import { LoginResponseModel } from "src/models/auth.login-response.model";
+import { LoginResponseModel } from "src/models/auth/auth.login-response.model";
 
 export class TokenService {
     private readonly jwtKey: string; // replace with Config file input
