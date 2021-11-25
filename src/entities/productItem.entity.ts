@@ -18,4 +18,10 @@ export class ProductItem {
 
   @Column()
   quantity: number;
+
+  @Column()
+  color: string;
+
+  @Column()
+  brand: string;
 }
