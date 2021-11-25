@@ -31,7 +31,7 @@ import { UserModule } from './modules/user.module';
   }),AuthModule,OutfitModule,HomeModule,UserModule,ConfigModule.forRoot({
     envFilePath: './config/.env',
     isGlobal: true,
-  }),MongooseModule.forRoot('mongodb+srv://fendytech:fendydev@fendy-dev.3nuiq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')],
+  })], // unable to connect mongoDB Atlas
   controllers: [AppController],
   providers: [AppService],
 })
