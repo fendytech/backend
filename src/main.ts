@@ -11,6 +11,7 @@ async function bootstrap() {
     .setTitle('FENDY API')
     .setDescription('Fendy API Documentation')
     .setVersion('1.0.0')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/doc', app, document);

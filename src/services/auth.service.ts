@@ -9,7 +9,7 @@ export class AuthService {
         private readonly tokenService: TokenService,
     ){}
   getHello(): any {
-    return this.tokenService.validateToken("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiMTYzNzQwMjU2ODQ3MCIsInVzZXJuYW1lIjoidmFnZXNod2FyIiwiaWF0IjoxNjM3NDAyNTY4fQ.Lws5-fL_vQLxN6k3VGy76zMb7wN1dx_Dg5nuItJYvwg");
+    return "Working";
   }
 
   async login(

@@ -2,10 +2,10 @@ import { Injectable, InternalServerErrorException } from "@nestjs/common";
 import * as AWS from 'aws-sdk';
 @Injectable()
 export class S3Service{
-    AWS_S3_BUCKET = "arn:aws:s3:ap-south-1:959342003489:accesspoint/fendydev-ap"
+    AWS_S3_BUCKET = ""
     s3 = new AWS.S3({
-        accessKeyId:"AKIA56XJ5IUQ2TTFZLNG",
-        secretAccessKey:"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"
+        accessKeyId:"",
+        secretAccessKey:""
     });
 
     async uploadFile(file){

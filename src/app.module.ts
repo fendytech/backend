@@ -29,7 +29,7 @@ import { UserModule } from './modules/user.module';
     entities: [Outfit,OutfitCategory,SpecialOutfit,Customer,Cart,ProductItem,Product,Favourite,Address],
     synchronize: true,
   }),AuthModule,OutfitModule,HomeModule,UserModule,ConfigModule.forRoot({
-    envFilePath: './config/.env',
+    envFilePath: '/config',
     isGlobal: true,
   })], // unable to connect mongoDB Atlas
   controllers: [AppController],
